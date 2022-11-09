@@ -177,6 +177,13 @@ main .col-100 img, .col-45 img {
     margin-bottom: 40px;
 }
 
+.w-65 .col-20 img {
+    width: 50%;
+    border-radius: 100%;
+    aspect-ratio: 1 / 0.9;
+    scale: 0.7;
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .col-66  {
         width: 66%;
