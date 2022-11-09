@@ -61,7 +61,10 @@ header .col-50:last-child {
 .row-70 .col-45:first-child {
     height: 400px;
     background-color: bisque;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .blue {
@@ -72,7 +75,7 @@ header .col-50:last-child {
     margin-top: 30px;
 }
 
-.col-75, .col-25 {
+.col-70, .col-20 {
     width: 90%;
     background-color: cadetblue;
     height: 400px;
@@ -93,4 +96,104 @@ main .w-100:last-child {
 
 .w-100 {
     padding: 20px;
+}
+
+.card-img {
+    height: 150px;
+    background-color: yellow;
+    width: 95%;
+    margin: 0 auto;
+}
+.card-text {
+    height: 170px;
+    background-color: grey;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .col-66  {
+        width: 66%;
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .w-95 .col-45 {
+        width: 45%;
+    }
+    .col-70 {
+        width: 70%;
+    }
+    .col-20 {
+        width: 20%;
+    }
+    .card-img {
+        width: 20%;
+        margin-top: 20px;
+    }
+    .card-text {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .col-66  {
+        width: 66%;
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+    .wrap, .desktop-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .w-95 .col-33 {
+        width: 33%;
+    }
+    .col-70 {
+        width: 70%;
+    }
+    .col-20 {
+        width: 20%;
+    }
+    .card-img {
+        width: 20%;
+        margin-top: 20px;
+    }
+    .card-text {
+        width: 60%;
+    }
+    .col-45, .row-70 .col-45:first-child {
+        width: 45%;
+    }
+    .desktop-wrap .card {
+        margin-top: 40px;
+    }
+    .row-70 .col-45, .w-65 {
+        margin: 0 auto;
+    }
+    .w-65 {
+        width: 65%;
+    }
+    .hamburger {
+        display: none;
+    }
+    .main-menu {
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    header .row {
+        width: 65%;
+    }
 }
