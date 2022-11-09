@@ -4,18 +4,24 @@
     box-sizing: border-box;
 }
 
+header {
+    height: 50px;
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 header .row {
     height: 50px;
-    width: 100%;
     display: flex;
-    background-color: blue;
     color: white;
 }
 
 header img {
-    height: 100%;
-    width: 50px;
-    background-color: aqua;
+    scale: 0.7;
 }
 
 header .col-50 {
@@ -110,6 +116,12 @@ main .w-100:last-child {
     width: 95%;
     margin: 0 auto;
     margin-top: 20px;
+}
+
+.hamburger i {
+    scale: 1.7;
+    line-height: 50px;
+    margin-right: 10px;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
