@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .row {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    color: white;
+}
+
+header img {
+    height: 100%;
+    width: 50px;
+    background-color: aqua;
+}
+
+header .col-50 {
+    width: 50%;
+    display: flex;
+}
+
+header .col-50:last-child {
+    justify-content: end;
+}
+
+.main-menu {
+    display: flex;
+    display: none;
+}
+
+.w-100 {
+    width: 100%;
+    background-color: violet;
+}
+
+.w-95 {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.col-100 {
+    width: 100%;
+    min-height: 400px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.card {
+    height: 400px;
+    width: 90%;
+    background-color: brown;
+    display: block;
+    margin: 0 auto;
+}
+
+.row-70 .col-45:first-child {
+    height: 400px;
+    background-color: bisque;
+    margin-top: 40px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue .card {
+    margin-top: 30px;
+}
+
+.col-75, .col-25 {
+    width: 90%;
+    background-color: cadetblue;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.col-90 {
+    width: 90%;
+    height: 400px;
+    background-color: chartreuse;
+    margin: 0 auto;
+}
+
+main .w-100:last-child {
+    background-color: black;
+}
+
+.w-100 {
+    padding: 20px;
+}
