@@ -41,7 +41,6 @@ header .col-50:last-child {
 
 .w-100 {
     width: 100%;
-    background-color: violet;
 }
 
 .w-95 {
@@ -63,7 +62,6 @@ header .col-50:last-child {
 }
 
 .card {
-    height: 400px;
     width: 90%;
     background-color: brown;
     display: block;
@@ -73,8 +71,6 @@ header .col-50:last-child {
 }
 
 .row-70 .col-45:first-child {
-    height: 400px;
-    background-color: bisque;
     width: 90%;
     margin: 0 auto;
     margin-top: 40px;
@@ -92,20 +88,14 @@ header .col-50:last-child {
 .col-70, .col-20 {
     width: 90%;
     background-color: cadetblue;
-    height: 400px;
     margin: 0 auto;
     margin-top: 20px;
 }
 
 .col-90 {
     width: 90%;
-    height: 400px;
     background-color: chartreuse;
     margin: 0 auto;
-}
-
-main .w-100:last-child {
-    background-color: black;
 }
 
 .w-100 {
@@ -113,14 +103,12 @@ main .w-100:last-child {
 }
 
 .card-img {
-    height: 150px;
     background-color: yellow;
     width: 95%;
     margin: 0 auto;
     width: 70%;
 }
 .card-text {
-    height: 170px;
     background-color: grey;
     width: 95%;
     margin: 0 auto;
@@ -182,6 +170,176 @@ main .col-100 img, .col-45 img {
     border-radius: 100%;
     aspect-ratio: 1 / 0.9;
     scale: 0.7;
+}
+
+.blue-card {
+    background-color: #b5ddff;
+    border-radius: 20px;
+    color: #5a6e7f;
+}
+
+.blue-card h3, .blue-card i {
+    color: #0084fd;
+}
+
+.blue-card button {
+    background-color: #0084fd;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: none;
+}
+
+.blue-card button i, .blue-card button a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.violet-bkg {
+    background-color: #9593E6;
+    color: rgb(225, 224, 224);
+    padding-bottom: 40px;
+}
+
+.white-card {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+
+.white-card p {
+    font-style: oblique;
+}
+
+.white-card button {
+    background-color:  #9593E6;
+    color: #353454;
+    border: none;
+    padding: 20px 25px;
+    font-size: x-large;
+    border-radius: 50%;
+}
+
+.grey-txt {
+    color: rgba(90,110,127,255);
+}
+
+.blue .violet-txt {
+    color: #9593E6;
+    font-size: x-large;
+}
+
+.blue .violet-bkg {
+    border-radius: 30px;
+}
+
+.white-txt {
+    color: white;
+}
+
+.violet-bkg .white-txt h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.second-white-card .date, .second-white-card h3 {
+    color: #9593E6;
+    font-size: xx-large;
+}
+
+ .second-white-card p {
+    font-style: normal;
+    color: #5a6e7f;
+}
+
+.second-white-card button {
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: medium;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    line-height: 2;
+}
+
+.about-us {
+    margin-bottom: 40px;
+}
+
+h1 {
+    padding: 60px 0px;
+    color: #9593E6;
+}
+
+.about-us h2 {
+    color: #9593E6;
+}
+
+.about-us button {
+    background-color: #9593E6;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+
+.about-us button i {
+    margin-right: 10px;
+}
+
+.quotation .fa-quote-left {
+    color: #9593E6;
+    position: absolute;
+    right: 180px;
+    top: 15px;
+    font-size: xx-large;
+}
+
+.quotation {
+    position: relative;
+}
+
+footer .violet-bkg {
+    color: white;
+}
+footer .violet-bkg button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: #9593E6;
+    margin-bottom: 30px;
+}
+
+.free {
+    font-size: 400%;
+    color: #fdc15f;
+    margin-bottom: 30px;
+}
+
+footer .violet-bkg i {
+    scale: 0.5;
+}
+
+.black-bkg {
+    color: white;
+}
+
+.black-bkg a {
+    color: #9593E6;
+    width: 100%;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.position-main-img {
+    position: relative;
+    top: 5px;
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
