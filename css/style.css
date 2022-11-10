@@ -7,7 +7,7 @@
 
 header {
     height: 50px;
-    background-color: blue;
+    background-color: #0084fd;
     position: fixed;
     width: 100%;
     top: 0;
@@ -48,6 +48,10 @@ header .col-50:last-child {
     margin: 0 auto;
 }
 
+header .w-95 {
+    width: 100%;
+}
+
 .container:first-child {
     margin-top: 100px;
 }
@@ -55,7 +59,6 @@ header .col-50:last-child {
 .col-100 {
     width: 100%;
     min-height: 400px;
-    background-color: aquamarine;
     margin: 0 auto;
     margin-top: 20px;
     padding: 30px 30px 0px 30px;
@@ -63,7 +66,6 @@ header .col-50:last-child {
 
 .card {
     width: 90%;
-    background-color: brown;
     display: block;
     margin: 0 auto;
     padding: 30px;
@@ -77,24 +79,18 @@ header .col-50:last-child {
     margin-bottom: 40px;
 }
 
-.blue {
-    background-color: blue;
-}
-
 .blue .card {
     margin-top: 30px;
 }
 
 .col-70, .col-20 {
     width: 90%;
-    background-color: cadetblue;
     margin: 0 auto;
     margin-top: 20px;
 }
 
 .col-90 {
     width: 90%;
-    background-color: chartreuse;
     margin: 0 auto;
 }
 
@@ -103,13 +99,11 @@ header .col-50:last-child {
 }
 
 .card-img {
-    background-color: yellow;
     width: 95%;
     margin: 0 auto;
     width: 70%;
 }
 .card-text {
-    background-color: grey;
     width: 95%;
     margin: 0 auto;
     margin-top: 20px;
@@ -163,6 +157,7 @@ main .col-100 img, .col-45 img {
 
 .date {
     margin-bottom: 40px;
+    font-size: xx-large;
 }
 
 .w-65 .col-20 img {
@@ -176,6 +171,10 @@ main .col-100 img, .col-45 img {
     background-color: #b5ddff;
     border-radius: 20px;
     color: #5a6e7f;
+}
+
+.blue-card p {
+    line-height: 1.5;
 }
 
 .blue-card h3, .blue-card i {
@@ -199,6 +198,7 @@ main .col-100 img, .col-45 img {
     background-color: #9593E6;
     color: rgb(225, 224, 224);
     padding-bottom: 40px;
+    line-height: 1.5;
 }
 
 .white-card {
@@ -245,12 +245,17 @@ main .col-100 img, .col-45 img {
 
 .second-white-card .date, .second-white-card h3 {
     color: #9593E6;
-    font-size: xx-large;
+}
+
+.second-white-card .date {
+    font-size: 400%;
+    font-weight: bold;
 }
 
  .second-white-card p {
     font-style: normal;
     color: #5a6e7f;
+    font-size: small;
 }
 
 .second-white-card button {
@@ -293,8 +298,8 @@ h1 {
 .quotation .fa-quote-left {
     color: #9593E6;
     position: absolute;
-    right: 180px;
-    top: 15px;
+    right: 60%;
+    top: 10%;
     font-size: xx-large;
 }
 
@@ -342,13 +347,77 @@ footer {
     top: 5px;
 }
 
+header a:visited {
+    text-decoration: none;
+    color: #0084fd;
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .accordion {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .accordion-label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+  .link {
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.1s;
+  } 
+  input:checked ~ .accordion-content .link {
+    opacity: 1;
+  }
+
+  .accordion-padding {
+    padding: 20px 50px;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    background: white;
+    transition: all 0.5s, color 0s;
+    position: relative;
+    bottom: 39%;
+    color: transparent;
+  }
+
+  input:checked ~ .accordion-content {
+    max-height: 100vh;
+    border: 1px solid #03407a;
+    color: #0084fd;
+    font-weight: bold;
+  }
+
+  input:checked ~ .accordion-content:last-child {
+    border-radius: 00px 0px 0px 20px;
+  }
+
+  .hamburger-icon {
+    position: relative;
+    left: 75%;
+    bottom: 40%;
+  }
+
+
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .col-66  {
-        width: 66%;
+        width: 64%;
     }
 
     .col-33 {
-        width: 33%;
+        width: 30%;
     }
     .wrap {
         display: flex;
@@ -371,11 +440,71 @@ footer {
     .card-text {
         width: 60%;
     }
+
+    .card-img img {
+        scale: 1.8;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+    
+    .about-us h2 {
+        font-size: large;
+    }
+
+    .about-us button {
+        padding: 5px 5px;
+        font-size: x-small;
+    }
+
+    .w-65 .col-20 .quotation img {
+        width: 100%;
+    }
+    
+    .quotation .fa-quote-left {
+        right: 10%;
+    }
 }
 
 @media screen and (min-width: 769px) {
+
+    header button {
+        border: none;
+        border-radius: 30px;
+        padding: 5px 20px;
+        margin-top: 5px;
+    }
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .main-menu-voice {
+        margin-right: 10px;
+    }
+
     .col-66  {
-        width: 66%;
+        width: 64%;
+        display: flex;
+    }
+
+    .blue-card-content {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+    .img-container {
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .col-100 .position-main-img {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        height: 50%;
     }
 
     .col-33 {
@@ -387,7 +516,7 @@ footer {
         justify-content: space-between;
     }
     .w-95 .col-33 {
-        width: 33%;
+        width: 30%;
     }
     .col-70 {
         width: 70%;
@@ -399,11 +528,20 @@ footer {
         width: 20%;
         margin-top: 20px;
     }
+    .card-img img {
+        scale: 1.3;
+    }
     .card-text {
         width: 60%;
+        text-align: left;
+        display: flex;
+        align-items: center;
     }
     .col-45, .row-70 .col-45:first-child {
         width: 45%;
+    }
+    .blue .row-70 .col-45 {
+        width: 90%;
     }
     .desktop-wrap .card {
         margin-top: 40px;
@@ -422,8 +560,38 @@ footer {
         display: block;
         display: flex;
         justify-content: space-between;
+        line-height: 50px;
+        font-size: small;
     }
     header .row {
         width: 65%;
+    }
+
+    .white-card {
+        scale: 0.6;
+        position: relative;
+        top: 10%;
+    }
+    .violet-bkg .second-white-card {
+        scale: 1;
+    }
+    h1 {
+        font-size: 300%;
+    }
+    
+    .about-us h2 {
+        font-size: large;
+    }
+    .about-us button {
+        padding: 5px 5px;
+        font-size: x-small;
+    }
+
+    .w-65 .col-20 .quotation img {
+        width: 100%;
+    }
+    
+    .quotation .fa-quote-left {
+        right: 10%;
     }
 }
